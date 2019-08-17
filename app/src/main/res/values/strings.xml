@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GistList</string>
+    <string name="departure">departure</string>
+    <string name="arrival">arrival</string>
+    <string name="hide_images">Hide images</string>
+    <string name="show_images">Show images</string>
+    <string name="google_maps_key">AIzaSyD0Y94zjBoOpQNaHVYMVgxYM9Gdluht1Ck</string><!--AIzaSyB4s_-M584OHzGcgH9iLylXMgNI4398iBs AIzaSyAE2_Q8tr_UEkHcnGqPtWGAdYQC8DuLSKw -->
+</resources>

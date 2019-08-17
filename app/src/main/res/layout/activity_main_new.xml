@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.MainActivityNew">
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_holder"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:layout_marginBottom="10dp"
+            android:textAlignment="textStart"
+            android:id="@+id/static_spinner"
+            app:ms_padding_left="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:layout_below="@+id/static_spinner"
+            android:textAlignment="textStart"
+            android:id="@+id/static_spinner1"
+            app:ms_padding_left="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:padding="14dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/date_picker"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Tap to set date"/>
+    </LinearLayout>
+   <RelativeLayout
+
+       android:layout_below="@+id/spinner_holder"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recyclerview"
+           android:padding="@dimen/activity_margin_10"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+       <LinearLayout
+           android:id="@+id/placeholder"
+           android:layout_width="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:orientation="vertical"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/flying_plane"
+               android:tint="@color/colorAccent"
+               android:layout_gravity="center"
+               android:src="@drawable/around"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_margin="15dp"
+               android:indeterminate="true" />
+           <TextView
+               android:id="@+id/place_holder_text"
+               android:layout_width="240dp"
+               android:textAlignment="center"
+               android:textSize="16sp"
+               android:text="Choose depart, arrival and pick a date to see schedules"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+       <ProgressBar
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:id="@+id/loading_icon"
+           android:visibility="gone"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:layout_margin="15dp"
+           android:indeterminate="true" />
+       <!-- <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/flying_plane"
+            android:tint="@color/colorAccent"
+            android:src="@drawable/around"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            android:indeterminate="true" />-->
+
+       <!-- <ProgressBar
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/loading_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:indeterminate="true" />-->
+   </RelativeLayout>
+</RelativeLayout>
