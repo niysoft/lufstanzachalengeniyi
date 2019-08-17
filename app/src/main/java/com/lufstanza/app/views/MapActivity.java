@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.lufstanza.app.R;
 import com.lufstanza.app.utils.Api;
 import com.lufstanza.app.utils.AppController;
@@ -150,7 +151,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         CameraPosition googlePlex = CameraPosition.builder()
                 .target(new LatLng(lat2, long2))
-                .zoom(3)
+                .zoom(3.2f)
                 .bearing(0)
                 .tilt(90)
                 .build();
